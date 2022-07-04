@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+    max-width: 100%;
+    font-family:'Roboto', sans-serif;
+}
+button{
+    background-color: #2fa1ff;
+    border: none;
+    outline: none;
+    color: #e9f5ff;
+    padding: 7px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+input{
+    padding: 5px 10px;
+    font-size: 19px;
+    color: #444;
+    outline: none;
+}
+.hidden{
+    display: none;
+}
+#only,
+#else{
+    width: 70px;
+}
+.container{
+    max-width: 100%;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    background: #e9f5ff;
+    color: #555;
+    text-align: center;
+    transition: all 0.5s;
+    padding: 7px;
+}
+.container.active{
+    background: #404852;
+}
+nav{
+    height: 10vh;
+    width: 100%;
+    background-color: #2fa1ff;
+    box-shadow: 0 0 5px #555;
+}
+.toggle{
+    position: fixed;
+    top: 12vh;
+    right: 20px;
+    width: 60px;
+    background-color: #2fa1ff;
+    height: 35px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    cursor: pointer;
+    padding: 5px 3px;
+}
+
+.toggle.fire{
+    justify-content: end;
+}
+.toggle p{
+    width: 30px;
+    height: 28px;
+    background-color: #e9f5ff;
+    border-radius: 50%;
+    box-shadow: 0 0 40px #fff;
+}
+footer{
+    height: 10vh;
+    width: 100%;
+    background-color: #2fa1ff;
+}
+.container h1{
+    color: #2fa1ff;
+    text-transform: capitalize;
+    font-size: 45px;
+}
+.container .input-sec{
+    margin: 30px 0;
+    max-width: 100%;
+    line-height: 2;
+}
+.container .input-sec select{
+    padding: 8px;
+    font-size: 18px;
+    color: #444;
+    outline: none;
+}
+.container .res-sec{
+    line-height: 2;
+    max-width: 100%;
+}
+.container .res-sec p{
+    font-size: 20px;
+}
+.container.active .res-sec p{
+    color: #fff;
+}
+.container .res-sec #resArabic{
+    font-size: 22px;
+}
+.container .res-sec .copy{
+    font-size: 25px;
+    border-radius: 10px;
+    padding: 2px;
+}
+.container .res-sec .copy:hover{
+    box-shadow: 1px 1px 5px #444;
+}
+
+

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>tafqit</title>
+</head>
+<body>
+    <nav></nav>
+    <div class="container">
+        <div class="toggle">
+            <p></p>
+        </div>
+        <h1>convert numbers to text</h1>
+        <section class="input-sec">
+            <input type="number" id="theInput" placeholder="ادخل العدد"/>
+            <select id="currency">
+                <option selected="selected" value="Riyal" class="هللة">ريال</option>
+                <option value="Egyption pound" class="قرش">جنيه</option>
+                <option value="" class=""></option>
+            </select>
+            <input type="text" id="only" value="فقط"/>
+            <input type="text" id="else" value="لا غير"/>
+            <button id="btn">تحويل</button>
+        </section>
+        <section class="res-sec">
+            <p id="resArabic"></p>
+            <button class="copy hidden" id="copyArabic"><ion-icon name="copy"></ion-icon></button>
+            <p id="result"></p>
+            <button class="copy hidden" id="copyEnglish"><ion-icon name="copy"></ion-icon></button>
+        </section>
+    </div>
+    <footer></footer>
+
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="./js/jquery-3.6.0.js"></script>
+    <script src="./js/library.js"></script>
+    <script src="./js/plugin.js"></script>
+</body>
+</html>
